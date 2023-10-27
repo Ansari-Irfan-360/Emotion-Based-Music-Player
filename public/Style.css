@@ -1,0 +1,30 @@
+body {
+  background: rgba(56, 101, 162, 255);
+  color: white;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  background: lightblue;
+  padding: 10px;
+  padding-left: 10px;
+}
+#bgImage {
+  height: 88.5vh;
+  margin-left: 150px;
+  display: inline-block;
+}
+#siteInfo {
+  display: inline-block;
+  margin-left: 60px;
+  opacity: 0.7;
+}
+#about {
+  margin: 70px;
+  opacity: 0.7;
+}
+#application {
+  margin-top: 40px;
+  margin-left: 70px;
+  opacity: 0.7;
+}
