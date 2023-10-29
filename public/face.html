@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <script defer src="face-api.min.js"></script>
-    <script defer src="script.js"></script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
 
-      canvas {
-        position: absolute;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>AI Music Player</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./Style.css" />
+  <style>
+    main {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      background: none;
+    }
+
+    canvas {
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/emotion-recognition">Emotion Recognition</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/application">Applications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
     <video id="video" width="720" height="560" autoplay muted></video>
-  </body>
+
+  </main>
+</body>
+
 </html>
