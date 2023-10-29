@@ -23,10 +23,10 @@ var neutralSong = new Audio("./songs/[Neutral] Lag Jaa Gale.mp3");
 var surprisedSong = new Audio("./songs/[Surprised] Theher Ja.mp3");
 
 var prevKey = 0;
-
 video.addEventListener("play", () => {
+  // 
   const canvas = faceapi.createCanvasFromMedia(video);
-  document.body.append(canvas);
+  document.querySelector('main').append(canvas);
   const displaySize = { width: video.width, height: video.height };
   faceapi.matchDimensions(canvas, displaySize);
   setInterval(async () => {
