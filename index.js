@@ -4,9 +4,6 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-
-const PORT = process.env.PORT || 3000;
-
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
@@ -25,6 +22,6 @@ app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/public/about.html");
 });
 
-app.listen(PORT, () => {
-  console.log("Listening on port "+PORT);
+app.listen(3000, () => {
+  console.log("Listening on port 3000");
 });

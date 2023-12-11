@@ -13,6 +13,8 @@ body {
   height: 88.5vh;
   margin-left: 150px;
   display: inline-block;
+  position: relative;
+  bottom: 5px;
 }
 #siteInfo {
   display: inline-block;
